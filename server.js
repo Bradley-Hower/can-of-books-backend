@@ -3,16 +3,27 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const mongoose = require('mongoose');
+const getBooks = require('./Modules/getBooks');
 
 const app = express();
 app.use(cors());
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT;
 
-app.get('/test', (request, response) => {
+// Establish connection with Atlas MongoDB
+mongoose.connect(process.env.MONGODB_CONN);
 
-  response.send('test request received')
+// Assign the conncetion to a variable for ease of use
+const db = mongoose.connection;
 
-})
+db.on('error', console.error.bind(console, 'Database connection error'));
+db.once('open', () => console.log('Database is connected'));
 
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
+app.get(('/', (req, res, next) => res.status(200).send('Default route working')));
+
+app.get('/books', getBooks);
+
+app.get(('*', (req, res, next) => res.status(404).send('Resource not found')));
+
+app.listen(PORT, () => console.log(`Listing on port ${PORT}`));
