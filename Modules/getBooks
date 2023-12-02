@@ -5,8 +5,8 @@ const Book = require('../Model/book');
 function getBooks(req, res, next){
   let queryObject = {};
 
-  if(req.query.location){
-    query.Object = {name: req.query.location}
+  if(req.query.title){
+    query.Object = {name: req.query.title}
   }
 
   Book.find({})

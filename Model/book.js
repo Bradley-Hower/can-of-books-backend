@@ -5,8 +5,9 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const bookSchema = new Schema({
-  name: String,
-
+  title: String,
+  description: String,
+  status: String,
 });
 
 const bookModel = mongoose.model('Book', bookSchema);
