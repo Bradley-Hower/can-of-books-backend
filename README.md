@@ -58,6 +58,10 @@ PICTURES TO GO HERE
 
 2023-12-01 17:04 - Server initialized.
 
+2023-12-01 19:30 - DB up and functional
+
+2023-12-02 14:30 - Fully functioning Carousel and Navigations
+
 ## Lighthouse
 
 PICTURES TO GO HERE
@@ -66,14 +70,26 @@ PICTURES TO GO HERE
 
 ----
 
-Name of feature: ####
+Name of feature: DB up and functional
 
-Estimate of time needed to complete: 1 hours
+Estimate of time needed to complete: 2 hours
 
-Start time: 1:00 PM
+Start time: 5:00 PM
 
-Finish time: 1:30 PM
+Finish time: 7:30 PM
 
-Actual time needed to complete: 30 minutes
+Actual time needed to complete: 2 hours 30 minutes
+
+----
+
+Name of feature: Fully functioning Carousel and Navigations
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 11:00 AM
+
+Finish time: 2:30 PM
+
+Actual time needed to complete: 3 hours 30 minutes
 
 ---
