@@ -9,7 +9,9 @@ const Book = require('./Model/book');
 
 async function seed(){
   const myBook = new Book({
-    name: 'Fahrenheit 451'
+    title: 'Fahrenheit 451',
+    description: 'Read and then burn.',
+    status: 'Available'
   });
 
   await myBook.save()
@@ -17,7 +19,15 @@ async function seed(){
     .catch(err => console.error(err));
 
   await Book.create({
-    name: 'The Great Gatsby'
+    title: 'The Great Gatsby',
+    description: 'A tale of the roaring 20\'s.',
+    status: 'Available'
+  });
+
+  await Book.create({
+    title: 'The Romans - From Village to Empire',
+    description: 'A history of Rome from start to end.',
+    status: 'Available'
   });
 
   mongoose.disconnect();
