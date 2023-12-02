@@ -52,7 +52,7 @@ https://www.mongodb.com/
 
 Technologies: Node.js, React, Bootstrap, Axios, React Router, MongoDB, Mongoose
 
-PICTURES TO GO HERE
+![2023_12_02_0pp_Kleki](https://github.com/Bradley-Hower/can-of-books-frontend/assets/139923955/8720cc4b-5dfc-4915-a1ec-dfe9a9377f4e)
 
 ## Change Log
 
@@ -64,7 +64,7 @@ PICTURES TO GO HERE
 
 ## Lighthouse
 
-PICTURES TO GO HERE
+![Screenshot_2023-12-02_15-15-11](https://github.com/Bradley-Hower/can-of-books-frontend/assets/139923955/e2cdd75b-74a1-483b-8c6c-e5cce2fdae67)
 
 ## Time Estimates and Outimes
 
