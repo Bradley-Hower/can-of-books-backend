@@ -1,0 +1,17 @@
+'use strict';
+
+const Book = require('../Model/book');
+
+function getBooks(req, res, next){
+  let queryObject = {};
+
+  if(req.query.location){
+    query.Object = {name: req.query.location}
+  }
+
+  Book.find({})
+    .then(data => res.status(200).send(data))
+    .catch(err => next(err));
+}
+
+module.exports = getBooks;
