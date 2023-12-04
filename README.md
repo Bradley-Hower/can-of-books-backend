@@ -62,6 +62,14 @@ Technologies: Node.js, React, Bootstrap, Axios, React Router, MongoDB, Mongoose
 
 2023-12-02 14:30 - Fully functioning Carousel and Navigations
 
+2023-12-03 15:00 - Backend updated for POST and DELETE
+
+2023-12-03 16:00 - Frontend framework for POST and DELETE
+
+2023-12-03 17:15 - Frontend form for adding books
+
+2023-12-03 19:15 - Frontend delete feature impletemented
+
 ## Lighthouse
 
 ![Screenshot_2023-12-02_15-15-11](https://github.com/Bradley-Hower/can-of-books-frontend/assets/139923955/e2cdd75b-74a1-483b-8c6c-e5cce2fdae67)
@@ -91,5 +99,51 @@ Start time: 11:00 AM
 Finish time: 2:30 PM
 
 Actual time needed to complete: 3 hours 30 minutes
+
+---
+PART II =======
+---
+Name of feature: Backend updated for POST and DELETE
+
+Estimate of time needed to complete: 1 hour 30 minutes
+
+Start time: 2:00 PM
+
+Finish time: 3:00 PM
+
+Actual time needed to complete: 1 hour
+
+---
+Name of feature: Frontend framework for POST and DELETE
+
+Estimate of time needed to complete: 30 minutes
+
+Start time: 3:00 PM
+
+Finish time: 4:00 PM
+
+Actual time needed to complete: 1 hour
+
+---
+Name of feature: Frontend form for adding books
+
+Estimate of time needed to complete: 30 minutes
+
+Start time: 4:00 PM
+
+Finish time: 5:15 PM
+
+Actual time needed to complete: 1 hour 15 minutes
+
+---
+Name of feature: Frontend delete feature impletemented
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 5:15 PM
+
+Finish time: 7:15 PM
+
+Actual time needed to complete: 2 hours
 
 ---
