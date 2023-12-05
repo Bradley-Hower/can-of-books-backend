@@ -25,6 +25,7 @@ app.get(('/', (req, res, next) => res.status(200).send('Default route working'))
 
 app.get('/books', bookHandler.getBooks);
 app.post('/books', bookHandler.postBook);
+app.put('/books/:id', bookHandler.updateBook);
 app.delete('/books/:id', bookHandler.deleteBook);
 
 app.get(('*', (req, res, next) => res.status(404).send('Resource not found')));

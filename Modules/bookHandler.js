@@ -26,6 +26,16 @@ bookHandler.postBook = function(req, res, next){
     .catch(err => next(err));
 };
 
+bookHandler.updateBook = function(req, res, next){
+  const {id} = req.params;
+  const data = req.body;
+  // new - returns update docs instead of old doc
+  // overwrite - overwrites doc completely avoiding unwanted side-effects
+  Book.findByIdAndUpdate(id, data, {new: true, overwrite: true})
+    .then(updatedBook => res.status(202).send(updatedBook))
+    .catch(err => next(err));
+};
+
 bookHandler.deleteBook = function(req, res, next){
   const {id} = req.params;
 
@@ -33,5 +43,6 @@ bookHandler.deleteBook = function(req, res, next){
     .then(deletedBook => res.status(202).send(deletedBook))
     .catch(err => next(err));
 };
+
 
 module.exports = bookHandler;
