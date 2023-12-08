@@ -4,14 +4,8 @@ const Book = require('../Model/book');
 
 const bookHandler = {};
 
-
-
 bookHandler.getBooks = function(req, res, next){
-  let queryObject = {};
-
-  if(req.query.title){
-    queryObject = {name: req.query.title};
-  }
+  let queryObject = {email: req.user.email};
 
   Book.find(queryObject)
     .then(data => res.status(200).send(data))
@@ -19,9 +13,7 @@ bookHandler.getBooks = function(req, res, next){
 };
 
 bookHandler.postBook = function(req, res, next){
-  const data = req.body;
-
-  Book.create(data)
+  Book.create({...req.body, email: req.user.email})
     .then(createdBook => res.status(201).send(createdBook))
     .catch(err => next(err));
 };
