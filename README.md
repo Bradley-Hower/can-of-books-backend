@@ -76,6 +76,8 @@ Technologies: Node.js, React, Bootstrap, Axios, React Router, MongoDB, Mongoose
 
 2023-12-04 19:35 - Add submit handler and show/hide feature for modal
 
+2023-12-07 21:31 - Add Auth0, have books associated with and only load per user.
+
 ## Lighthouse
 
 ![Screenshot_2023-12-02_15-15-11](https://github.com/Bradley-Hower/can-of-books-frontend/assets/139923955/e2cdd75b-74a1-483b-8c6c-e5cce2fdae67)
@@ -189,5 +191,30 @@ Start time: 5:00 PM
 Finish time: 7:35 PM
 
 Actual time needed to complete: 2 hours 35 minutes - had issues with variable name error
+
+---
+PART IV =======
+---
+Name of feature: Add Auth0
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 4:00 PM
+
+Finish time: 7:00 PM next day
+
+Actual time needed to complete: Hard to say, there were a lot of issues. One was the settings that cause it to not work.
+
+---
+
+Name of feature: Make books associate with user email addresses, only loading theirs
+
+Estimate of time needed to complete: 45 minutes
+
+Start time: 5:00 PM
+
+Finish time: 9:00 PM
+
+Actual time needed to complete: 2 hours Issues due to discorganized presentation and lacking demo docks in repo
 
 ---

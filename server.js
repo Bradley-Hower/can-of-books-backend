@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const bookHandler = require('./Modules/bookHandler');
+const verifyUser = require('./Modules/authorize');
 
 const app = express();
 app.use(cors());
@@ -22,6 +23,8 @@ db.on('error', console.error.bind(console, 'Database connection error'));
 db.once('open', () => console.log('Database is connected'));
 
 app.get(('/', (req, res, next) => res.status(200).send('Default route working')));
+
+app.use(verifyUser);
 
 app.get('/books', bookHandler.getBooks);
 app.post('/books', bookHandler.postBook);
